@@ -27,21 +27,16 @@ async def send_welcome(message: types.Message):
     user_state.pop(message.from_user.id, None)
     welcome = (
         "Добро пожаловать в официальный Telegram-бот обменного пункта!"
-
-"
         "Мы работаем с валютой и криптовалютой."
-"
         "Гарантируем надёжность, конфиденциальность и индивидуальный подход."
-
-"
         "Выберите нужный раздел ниже:"
     )
     await message.answer(welcome, reply_markup=menu_kb)
 
 @dp.message_handler(lambda m: m.text == "График работы")
 async def handle_hours(message: types.Message):
-    await message.answer("График работы:
-Понедельник–Суббота
+    await message.answer("График работы:\n
+Понедельник–Суббота\n
 с 10:00 до 20:00")
 
 @dp.message_handler(lambda m: m.text == "Контакты")
