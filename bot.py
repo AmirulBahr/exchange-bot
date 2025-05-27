@@ -26,7 +26,7 @@ menu_kb.add("Контакты", "График работы")
 async def send_welcome(message: types.Message):
     user_state.pop(message.from_user.id, None)
     welcome = (
-        "Добро пожаловать в официальный Telegram-бот обменного пункта!
+        "Добро пожаловать в официальный Telegram-бот обменного пункта!"
 
 "
         "Мы работаем с валютой и криптовалютой.
