@@ -1,4 +1,4 @@
-from keep_alive.py import start_web
+from keep_alive .py import start_web
 import logging
 import json
 import re
