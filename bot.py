@@ -67,8 +67,7 @@ async def handle_steps(message: types.Message):
         state["direction"] = direction
         state["rate"] = RATES[direction]
         state["step"] = "amount"
-        await message.answer(f"Курс {direction}: 1 = {state['rate']}
-Введите сумму:")
+        await message.answer(f"Курс {direction}: 1 = {state['rate']}Введите сумму:")
 
     elif step == "amount":
         try:
@@ -147,8 +146,8 @@ async def process_callback(callback_query: types.CallbackQuery):
         f"К получению: {total}"
     )
 
-    await bot.send_message(ADMIN_USERNAME, text)
-    await bot.send_message(user_id, "Заявка отправлена. Мы свяжемся с вами в ближайшее время.")
+    await bot.send_message(@rus_tam0, text)
+    await bot.send_message(5958763339, "Заявка отправлена. Мы свяжемся с вами в ближайшее время.")
     await bot.answer_callback_query(callback_query.id, "Заявка подтверждена.")
 
 
