@@ -4,7 +4,7 @@ import json
 import re
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = "7222497947:AAEB_KFbfutXwrW2BsavypFLDiSCu61qKY"
+API_TOKEN = "7222497947:AAEB-_KFbfutXwrW2BsavypFLDiSCu61qKY"
 ADMIN_USERNAME = "@rus_tam0"
 
 logging.basicConfig(level=logging.INFO)
