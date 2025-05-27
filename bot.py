@@ -150,4 +150,7 @@ async def process_callback(callback_query: types.CallbackQuery):
 
 if __name__ == "__main__":
     start_web()
-    executor.start_polling(dp, skip_updates=True)
+    import asyncio
+    loop = asyncio.get_event_loop()
+    loop.create_task(executor.start_polling(dp, skip_updates=True))
+    loop.run_forever()
