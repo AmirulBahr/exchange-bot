@@ -41,8 +41,7 @@ async def handle_hours(message: types.Message):
 
 @dp.message_handler(lambda m: m.text == "Контакты")
 async def handle_contacts(message: types.Message):
-    await message.answer("По всем вопросам:
-@rus_tam0")
+    await message.answer("По всем вопросам:@rus_tam0")
 
 @dp.message_handler(lambda m: m.text in ["Купить USDT", "Продать USDT", "Обмен валют", "Перестановка денег"])
 async def handle_exchange(message: types.Message):
